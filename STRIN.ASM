@@ -1,4 +1,4 @@
-;program to output the string by each character
+;program to input and output the string by each character
 
 .model small
 .data
