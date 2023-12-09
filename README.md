@@ -1,5 +1,4 @@
 # **8086-MASM PROGRAMMING**
-                                                                                                                By Alwin Mathew
                         
 # TABLE OF CONTENTS
 
