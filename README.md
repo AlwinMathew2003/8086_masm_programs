@@ -2,7 +2,7 @@
 # **8086-MASM PROGRAMMING**<br>
 
 
-<br>## **Table Of Contents**
+## **<br>Table Of Contents**
 | **SECTION**                        | **LINKS**                            |
 |---------------------------------|---------------------------------------|
 |**Installation of 8086** | [Installation of 8086](#Installation)  |
@@ -14,13 +14,13 @@
 |**Basic Code Block**                | [Basic Code Block](#basic-code-block)               |
 
 
-## Installation
+## <br>Installation
 
 [![Download DOSBox](https://img.shields.io/badge/Download%20DOSBox-Install%20Now-brightgreen?style=for-the-badge)](https://sourceforge.net/projects/dosbox/files/latest/download)
 
 [![Download Masm-8086](https://img.shields.io/badge/Download%20Masm--8086-Install%20Now-brightgreen?style=for-the-badge)](https://drive.google.com/file/d/1DoQrdZ6WJOGZwa-EuDXU-DnCHBtf2tl8/view)
 
-## Sample 8086 masm assembly programs
+## <br>Sample 8086 masm assembly programs
 
 | Program Name | Description | Code File |
 |--------------|-------------|-----------|
@@ -46,7 +46,7 @@
 
 
 
-## **Registers and Usage**
+## **<br>Registers and Usage**
 
 1. **General-Purpose Registers:**
     - **AX (Accumulator):** Often used for arithmetic and logic operations. It is also used in some string manipulation instructions.
@@ -67,7 +67,7 @@
 5. **Flag Register:**
     - **FLAGS (Status Flags):** Contains various status flags such as zero flag (ZF), carry flag (CF), sign flag (SF), etc., indicating the result of arithmetic and logical operations.
 
-## **Basic Instruction**
+## **<br>Basic Instruction**
 
 ### **Data Copy Instructions:**
 
@@ -151,7 +151,7 @@ JNE not_equal_label ; Jump to not_equal_label if they are not equal
 CMP AX, BX ; Compare AX and BX
 JG greater_label ; Jump to greater_label if AX > BX
 
-## INT 21H DOS Function
+## <br>INT 21H DOS Function
 
 **01H**
 
@@ -172,11 +172,14 @@ characters act normally and the operation automatically advances the cursor.
 **09H**
 
 MOV Ah, 09H; request display
+
 LEA DX, CUST_MSG; local address of prompt
+
 INNT 21H
+
 CUST_MSG DB “Hello world”, ‘$’
 
-- Displays string in the data area, immediately followed by a dollar sign ($ or 24H), which
+Displays string in the data area, immediately followed by a dollar sign ($ or 24H), which
 uses to end the display.
 
 **OAH & 3FH**
@@ -184,14 +187,18 @@ uses to end the display.
 It is used to read a string, you can use 3FH
 
 MOV AH, 0AH ; request keyboard input
+
 LEA DX, PARA_ LIST ; load address of parameter list
+
 INT 21H
+
 Parameter list for keyboard input area :
 PARA_LIST LABEL BYTE; start of parameter list
+
 MAX_LEN DB 20; max. no. of input character
 make these text without newline spaces
 
-## **Basic ASCII Values**
+## **<br>Basic ASCII Values**
 
 Space = 32(decimal)
 
@@ -207,7 +214,7 @@ To ASCII = add it with 30H or 48(decimal)
 
 To decimal or character = sub it with 30H
 
-## **Basic Code Block**
+## **<br>Basic Code Block**
 
 **Declare a variable to store value**
 
