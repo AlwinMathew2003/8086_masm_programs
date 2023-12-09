@@ -1,3 +1,5 @@
+;program to output the string by each character
+
 .model small
 .data
 string db 100 dup(?)
