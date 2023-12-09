@@ -7,13 +7,12 @@
 
 | **SECTION**                        | **LINKS**                            |
 |---------------------------------|---------------------------------------|
-|**QUESTIONS AND CODE FILES TABLE** | [QUESTIONS AND CODE FILES TABLE](#questions-and-code-files-table)  |
-|**REGISTERS AND USAGE**             | [REGISTERS AND USAGE](#registers-and-usage)               |
-|**BASIC INSTRUCTION**               | [BASIC INSTRUCTION](#basic-instruction)               |
-|**INT 21H DOS FUNCTION**            | [INT 21H DOS FUNCTION](#int-21h-dos-function)               |
-|**BASIC ASCII VALUES**              | [BASIC ASCII VALUES](#basic-ascii-values)               |
-|**BASIC CODE BLOCK**                | [BASIC CODE BLOCK](#basic-code-block)               |
-
+|**Questions and Code Files Table** | [Questions and Code Files Table](#questions-and-code-files-table)  |
+|**Registers and Usage**             | [Registers and Usage](#registers-and-usage)               |
+|**Basic Instruction**               | [Basic Instruction](#basic-instruction)               |
+|**INT 21H DOS Function**            | [INT 21H DOS Function](#int-21h-dos-function)               |
+|**Basic ASCII Values**              | [Basic ASCII Values](#basic-ascii-values)               |
+|**Basic Code Block**                | [Basic Code Block](#basic-code-block)               |
 
 
 ## QUESTIONS AND CODE FILES TABLE
