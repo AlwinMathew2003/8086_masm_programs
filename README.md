@@ -30,7 +30,7 @@
 | **String Reversal using Stack** | Program to reverse a string using a stack. | [StringReverse.asm](REVERSE.ASM) |
 | **Print number** |program to print a number in a variable. | [PrintNum.asm](NumberInputOutput.asm) |
 | **Number Input and Output** | Program to input a number and print the inputted number. | [NumberInputOutput.asm](NumberInputOutput.asm) |
-| **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](EvenOdd.asm) |
+| **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](EVEN_ODD.asm) |
 | **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](ADD.ASM) |
 | **Multiplication of Two Numbers** | Program to multiply two numbers. | [Multiplication.asm](MUL.ASM) |
 | **Multiplication without Using MUL** | Program to multiply two numbers without using MUL. | [MultiplicationWithoutMUL.asm](MultiplicationWithoutMUL.asm) |
