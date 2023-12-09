@@ -4,7 +4,7 @@
 | **SECTION**                        | **LINKS**                            |
 |---------------------------------|---------------------------------------|
 |**Installation of 8086** | [Installation of 8086](#Installation)  |
-|**Questions and Code Files Table** | [Questions and Code Files Table](#questions-and-code-files-table)  |
+|**Sample 8086 masm assembly programs** | [Sample 8086 masm assembly programs](#sample-8086-masm-assembly-programs)  |
 |**Registers and Usage**             | [Registers and Usage](#registers-and-usage)               |
 |**Basic Instruction**               | [Basic Instruction](#basic-instruction)               |
 |**INT 21H DOS Function**            | [INT 21H DOS Function](#int-21h-dos-function)               |
@@ -18,14 +18,29 @@
 
 [![Download Masm-8086](https://img.shields.io/badge/Download%20Masm--8086-Install%20Now-brightgreen?style=for-the-badge)](https://drive.google.com/file/d/1DoQrdZ6WJOGZwa-EuDXU-DnCHBtf2tl8/view)
 
-## Questions and Code Files Table
+## Sample 8086 masm assembly programs
 
-| Question | Code File |
-|----------|-----------|
-| How to add two numbers? | [Palindrome.asm](PALINDRO.ASM) |
-| What is the main function in Python? | [MainFunction.py](src/MainFunction.py) |
-| How to implement a linked list? | [LinkedList.java](src/LinkedList.java) |
-| How to style a webpage with CSS? | [Style.css](web/Style.css) |
+| Program Name | Description | Code File |
+|--------------|-------------|-----------|
+| **Hello Program** | Program to print "hello." | [Hello.asm](Hello.asm) |
+| **String Input and Output** | Program to input and output a string character by character. | [StringInOut.asm](StringInOut.asm) |
+| **String Input and Output (Using DOS Functions)** | Program to input a string using 3FH and output using 09H. | [StringInputOutput.asm](StringInputOutput.asm) |
+| **Palindrome Check** | Program to check whether the given string is a palindrome. | [Palindrome.asm](Palindrome.asm) |
+| **String Length Calculation** | Program to find the length of a string. | [StringLength.asm](StringLength.asm) |
+| **String Reversal using Stack** | Program to reverse a string using a stack. | [StringReverse.asm](StringReverse.asm) |
+| **Number Input and Output** | Program to input a number and print the inputted number. | [NumberInputOutput.asm](NumberInputOutput.asm) |
+| **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](EvenOdd.asm) |
+| **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](Addition.asm) |
+| **Multiplication of Two Numbers** | Program to multiply two numbers. | [Multiplication.asm](Multiplication.asm) |
+| **Multiplication without Using MUL** | Program to multiply two numbers without using MUL. | [MultiplicationWithoutMUL.asm](MultiplicationWithoutMUL.asm) |
+| **Division of Two Numbers** | Program to divide two numbers. | [Division.asm](Division.asm) |
+| **Division without Using DIV** | Program to divide two numbers without using DIV. | [DivisionWithoutDIV.asm](DivisionWithoutDIV.asm) |
+| **Factorization** | Program to find the factors of a number. | [Factors.asm](Factors.asm) |
+| **Array Input and Output** | Program to input array elements and print the array elements. | [ArrayInputOutput.asm](ArrayInputOutput.asm) |
+| **Array Sorting** | Program to sort array elements. | [ArraySort.asm](ArraySort.asm) |
+| **Finding the Largest Number in an Array** | Program to find the largest number in an array. | [LargestInArray.asm](LargestInArray.asm) |
+| **Sum of the First 10 Even Numbers** | Program to find the sum of the first 10 even numbers. | [SumOfEvenNumbers.asm](SumOfEvenNumbers.asm) |
+
 
 
 ## **Registers and Usage**
