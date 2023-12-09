@@ -1,8 +1,8 @@
 
-# **8086-MASM PROGRAMMING**<br><br>
+# **8086-MASM PROGRAMMING**<br>
 
 
-## **Table Of Contents**
+<br>## **Table Of Contents**
 | **SECTION**                        | **LINKS**                            |
 |---------------------------------|---------------------------------------|
 |**Installation of 8086** | [Installation of 8086](#Installation)  |
