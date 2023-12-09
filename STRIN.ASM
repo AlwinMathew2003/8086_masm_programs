@@ -1,5 +1,5 @@
 ;program to input and output the string by each character
-
+;While inputting a string always put '$' after the string to mention the end of the string
 .model small
 .data
 string db 100 dup(?)
