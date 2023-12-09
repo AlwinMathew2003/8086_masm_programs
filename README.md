@@ -8,9 +8,7 @@
 | How to implement a linked list? | [LinkedList.java](src/LinkedList.java) |
 | How to style a webpage with CSS? | [Style.css](web/Style.css) |
 ## **REGISTERS AND USAGE**
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+	[title](https://www.example.com)
 1. **General-Purpose Registers:**
     - **AX (Accumulator):** Often used for arithmetic and logic operations. It is also used in some string manipulation instructions.
     - **BX (Base):** Used as a base register for memory addressing.
