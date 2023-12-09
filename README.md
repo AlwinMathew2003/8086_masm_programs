@@ -36,7 +36,7 @@
 | **Multiplication without Using MUL** | Program to multiply two numbers without using MUL. | [MultiplicationWithoutMUL.asm](MultiplicationWithoutMUL.asm) |
 | **Division of Two Numbers** | Program to divide two numbers. | [Division.asm](DIV.ASM) |
 | **Division without Using DIV** | Program to divide two numbers without using DIV. | [DivisionWithoutDIV.asm](DivisionWithoutDIV.asm) |
-| **Factorization** | Program to find the factors of a number. | [Factors.asm](Factors.asm) |
+| **Factorization** | Program to find the factors of a number. | [Factors.asm](FACT.ASM) |
 | **Array Input and Output** | Program to input array elements and print the array elements. | [ArrayInputOutput.asm](ArrayInputOutput.asm) |
 | **Array Sorting** | Program to sort array elements. | [ArraySort.asm](ArraySort.asm) |
 | **Finding the Largest Number in an Array** | Program to find the largest number in an array. | [LargestInArray.asm](LargestInArray.asm) |
