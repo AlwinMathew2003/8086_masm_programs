@@ -1,9 +1,11 @@
 .model small
+
 printn macro p
 lea dx,p
 mov ah,09h
 int 21h
 endm
+
 .data
 msg1 db 10,13,'Enter the number:$'
 msg2 db 10,13,'The inputted number is:$'
