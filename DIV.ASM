@@ -1,3 +1,5 @@
+;program to divide to numbers
+
 .model small
 
 prints macro p
