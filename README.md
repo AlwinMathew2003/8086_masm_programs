@@ -3,6 +3,7 @@
 
 | **SECTION**                        | **LINKS**                            |
 |---------------------------------|---------------------------------------|
+|**Installation of 8086** | [Installation of 8086](#Installation)  |
 |**Questions and Code Files Table** | [Questions and Code Files Table](#questions-and-code-files-table)  |
 |**Registers and Usage**             | [Registers and Usage](#registers-and-usage)               |
 |**Basic Instruction**               | [Basic Instruction](#basic-instruction)               |
@@ -10,8 +11,8 @@
 |**Basic ASCII Values**              | [Basic ASCII Values](#basic-ascii-values)               |
 |**Basic Code Block**                | [Basic Code Block](#basic-code-block)               |
 
-
-## QUESTIONS AND CODE FILES TABLE
+## Installation
+## Questions and Code Files Table
 
 | Question | Code File |
 |----------|-----------|
@@ -21,7 +22,7 @@
 | How to style a webpage with CSS? | [Style.css](web/Style.css) |
 
 
-## **REGISTERS AND USAGE**
+## **Registers and Usage**
 
 1. **General-Purpose Registers:**
     - **AX (Accumulator):** Often used for arithmetic and logic operations. It is also used in some string manipulation instructions.
@@ -42,7 +43,7 @@
 5. **Flag Register:**
     - **FLAGS (Status Flags):** Contains various status flags such as zero flag (ZF), carry flag (CF), sign flag (SF), etc., indicating the result of arithmetic and logical operations.
 
-## **BASIC INSTRUCTION**
+## **Basic Instruction**
 
 ### **Data Copy Instructions:**
 
@@ -69,15 +70,21 @@ ADD AX, BX ; Add the value in BX to AX
 SUB CX, DX ; Subtract the value in DX from CX
 
 ####  MUL (Unsigned Multiplication):
+it multiplies the value and store in AX register
 
 MOV AX, 5
+
 MOV BX, 10
+
 MUL BX ; AX = AX * B
 
 ####  DIV (Unsigned Division):
+It divides the value in AX register and store the remainder in AH and qoutiend in AL register
 
 MOV AX, 30
+
 MOV CX, 5
+
 DIV CX ; AX = AX / CX, DX = AX % CX
 
 ### **Logical Instructions:**
@@ -120,7 +127,7 @@ JNE not_equal_label ; Jump to not_equal_label if they are not equal
 CMP AX, BX ; Compare AX and BX
 JG greater_label ; Jump to greater_label if AX > BX
 
-## INT 21H DOS FUNCTION
+## INT 21H DOS Function
 
 **01H**
 
@@ -160,7 +167,7 @@ PARA_LIST LABEL BYTE; start of parameter list
 MAX_LEN DB 20; max. no. of input character
 make these text without newline spaces
 
-## **BASIC ASCII VALUES**
+## **Basic ASCII Values**
 
 Space = 32(decimal)
 
@@ -176,7 +183,7 @@ To ASCII = add it with 30H or 48(decimal)
 
 To decimal or character = sub it with 30H
 
-## **BASIC CODE BLOCK**
+## **Basic Code Block**
 
 **Declare a variable to store value**
 
