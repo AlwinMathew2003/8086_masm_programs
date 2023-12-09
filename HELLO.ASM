@@ -1,3 +1,5 @@
+;program to print a string
+
 .MODEL SMALL
 PRINTN MACRO P
 LEA DX,P
