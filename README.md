@@ -1,10 +1,13 @@
 # **8086-MASM PROGRAMMING**
 
 # Table of Contents
+| Section | Link                                  |
+|---------|---------------------------------------|
+| 1       | [Section 1](#section-1)               |
+| 2       | [Section 2](#section-2)               |
+| 3       | [Section 3](#section-3)               |
+| 4 | [Questions and Code Files](#heading)  |
 
-1. [Section 1](#section-1)
-2. [Section 2](#section-2)
-3. [Section 3](#section-3)
 
 # Questions and Code Files Table
 
