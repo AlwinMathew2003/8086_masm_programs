@@ -1,5 +1,4 @@
 ; program to check whether the given string is palindrome
-
 .model small
 printn macro p
 lea dx,p
