@@ -31,8 +31,8 @@
 | **Print number** |program to print a number in a variable. | [PrintNum.asm](NumberInputOutput.asm) |
 | **Number Input and Output** | Program to input a number and print the inputted number. | [NumberInputOutput.asm](NumberInputOutput.asm) |
 | **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](EvenOdd.asm) |
-| **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](Addition.asm) |
-| **Multiplication of Two Numbers** | Program to multiply two numbers. | [Multiplication.asm](Multiplication.asm) |
+| **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](ADD.ASM) |
+| **Multiplication of Two Numbers** | Program to multiply two numbers. | [Multiplication.asm](MUL.ASM) |
 | **Multiplication without Using MUL** | Program to multiply two numbers without using MUL. | [MultiplicationWithoutMUL.asm](MultiplicationWithoutMUL.asm) |
 | **Division of Two Numbers** | Program to divide two numbers. | [Division.asm](Division.asm) |
 | **Division without Using DIV** | Program to divide two numbers without using DIV. | [DivisionWithoutDIV.asm](DivisionWithoutDIV.asm) |
