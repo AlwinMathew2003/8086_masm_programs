@@ -1,5 +1,11 @@
 # **8086-MASM PROGRAMMING**
 
+# Table of Contents
+
+1. [Section 1](#section-1)
+2. [Section 2](#section-2)
+3. [Section 3](#section-3)
+
 # Questions and Code Files Table
 
 | Question | Code File |
@@ -8,6 +14,28 @@
 | What is the main function in Python? | [MainFunction.py](src/MainFunction.py) |
 | How to implement a linked list? | [LinkedList.java](src/LinkedList.java) |
 | How to style a webpage with CSS? | [Style.css](web/Style.css) |
+
+
+## **REGISTERS AND USAGE**
+
+1. **General-Purpose Registers:**
+    - **AX (Accumulator):** Often used for arithmetic and logic operations. It is also used in some string manipulation instructions.
+    - **BX (Base):** Used as a base register for memory addressing.
+    - **CX (Counter):** Primarily used as a loop counter in string and loop operations.
+    - **DX (Data):** Used in multiplication and division operations, as well as certain I/O operations.
+2. **Index Registers:**
+    - **SI (Source Index):** Used as a source index in string operations.
+    - **DI (Destination Index):** Used as a destination index in string operations.
+3. **Segment Registers:**
+    - **CS (Code Segment):** Contains the starting address of the code segment.
+    - **DS (Data Segment):** Contains the starting address of the data segment.
+    - **SS (Stack Segment):** Points to the beginning of the stack segment.
+    - **ES (Extra Segment):** An additional segment register often used for extra data segment addressing.
+4. **Pointer Registers:**
+    - **SP (Stack Pointer):** Points to the top of the stack.
+    - **BP (Base Pointer):** Used as a base pointer for stack operations.
+5. **Flag Register:**
+    - **FLAGS (Status Flags):** Contains various status flags such as zero flag (ZF), carry flag (CF), sign flag (SF), etc., indicating the result of arithmetic and logical operations.
 
 ## **BASIC INSTRUCTION**
 
@@ -86,26 +114,6 @@ JNE not_equal_label ; Jump to not_equal_label if they are not equal
 
 CMP AX, BX ; Compare AX and BX
 JG greater_label ; Jump to greater_label if AX > BX
-## **REGISTERS AND USAGE**
-
-1. **General-Purpose Registers:**
-    - **AX (Accumulator):** Often used for arithmetic and logic operations. It is also used in some string manipulation instructions.
-    - **BX (Base):** Used as a base register for memory addressing.
-    - **CX (Counter):** Primarily used as a loop counter in string and loop operations.
-    - **DX (Data):** Used in multiplication and division operations, as well as certain I/O operations.
-2. **Index Registers:**
-    - **SI (Source Index):** Used as a source index in string operations.
-    - **DI (Destination Index):** Used as a destination index in string operations.
-3. **Segment Registers:**
-    - **CS (Code Segment):** Contains the starting address of the code segment.
-    - **DS (Data Segment):** Contains the starting address of the data segment.
-    - **SS (Stack Segment):** Points to the beginning of the stack segment.
-    - **ES (Extra Segment):** An additional segment register often used for extra data segment addressing.
-4. **Pointer Registers:**
-    - **SP (Stack Pointer):** Points to the top of the stack.
-    - **BP (Base Pointer):** Used as a base pointer for stack operations.
-5. **Flag Register:**
-    - **FLAGS (Status Flags):** Contains various status flags such as zero flag (ZF), carry flag (CF), sign flag (SF), etc., indicating the result of arithmetic and logical operations.
 
 ## INT 21H DOS FUNCTION
 
