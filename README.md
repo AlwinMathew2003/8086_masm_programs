@@ -2,7 +2,7 @@
 
 # TABLE OF CONTENTS
 
-| Section                        | Link                                  |
+| **SECTION**                        | **lINKS**                            |
 |---------------------------------|---------------------------------------|
 |**QUESTIONS AND CODE FILES TABLE** | [QUESTIONS AND CODE FILES TABLE](#questions-and-code-files-table)  |
 |**REGISTERS AND USAGE**             | [REGISTERS AND USAGE](#registers-and-usage)               |
