@@ -1,4 +1,5 @@
 # **8086-MASM PROGRAMMING**
+
 # Questions and Code Files Table
 
 | Question | Code File |
@@ -8,6 +9,83 @@
 | How to implement a linked list? | [LinkedList.java](src/LinkedList.java) |
 | How to style a webpage with CSS? | [Style.css](web/Style.css) |
 
+## **BASIC INSTRUCTION**
+
+### **Data Copy Instructions:**
+
+#### MOV (Move):
+
+MOV AX, BX ; Copy the value in BX to AX
+
+####  LEA (Load Effective Address):
+
+LEA SI, array ; Load the effective address of 'array' into SI
+
+####  XCHG (Exchange):
+
+XCHG AX, BX ; Exchange the values in AX and BX
+
+###  **Arithmetic Instructions:**
+
+####  ADD (Addition):
+
+ADD AX, BX ; Add the value in BX to AX
+
+#### SUB (Subtraction):
+
+SUB CX, DX ; Subtract the value in DX from CX
+
+####  MUL (Unsigned Multiplication):
+
+MOV AX, 5
+MOV BX, 10
+MUL BX ; AX = AX * B
+
+####  DIV (Unsigned Division):
+
+MOV AX, 30
+MOV CX, 5
+DIV CX ; AX = AX / CX, DX = AX % CX
+
+### **Logical Instructions:**
+
+####  AND (Bitwise AND):
+
+AND AL, 0Fh ; Perform a bitwise AND with AL and 0Fh
+
+####  OR (Bitwise OR):
+
+OR BL, 80h ; Perform a bitwise OR with BL and 80h
+
+#### XOR (Bitwise XOR):
+
+assemblyCopy code
+XOR AX, AX ; Perform a bitwise XOR on AX with itself (AX = 0)
+
+####  NOT (Bitwise NOT):
+
+NOT DX ; Perform a bitwise NOT on DX
+
+### **Branch Instructions:**
+
+####  JMP (Unconditional Jump):
+
+JMP label ; Jump to the specified label unconditionally
+
+####  JE (Jump if Equal):
+
+CMP AX, BX ; Compare AX and BX
+JE equal_label ; Jump to equal_label if they are equal
+
+####  JNE (Jump if Not Equal):
+
+CMP CX, DX ; Compare CX and DX
+JNE not_equal_label ; Jump to not_equal_label if they are not equal
+
+####  JG (Jump if Greater):
+
+CMP AX, BX ; Compare AX and BX
+JG greater_label ; Jump to greater_label if AX > BX
 ## **REGISTERS AND USAGE**
 
 1. **General-Purpose Registers:**
