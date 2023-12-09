@@ -3,7 +3,7 @@
 
 
                         
-# TABLE OF CONTENTS
+
 
 | **SECTION**                        | **LINKS**                            |
 |---------------------------------|---------------------------------------|
@@ -16,7 +16,7 @@
 
 
 
-# QUESTIONS AND CODE FILES TABLE
+## QUESTIONS AND CODE FILES TABLE
 
 | Question | Code File |
 |----------|-----------|
