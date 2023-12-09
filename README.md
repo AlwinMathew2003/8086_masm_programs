@@ -28,6 +28,7 @@
 | **Palindrome Check** | Program to check whether the given string is a palindrome. | [Palindrome.asm](PALINDRO.ASM) |
 | **String Length Calculation** | Program to find the length of a string. | [StringLength.asm](STRLEN.ASM) |
 | **String Reversal using Stack** | Program to reverse a string using a stack. | [StringReverse.asm](REVERSE.ASM) |
+| **Print number** |program to print a number in a variable. | [PrintNum.asm](NumberInputOutput.asm) |
 | **Number Input and Output** | Program to input a number and print the inputted number. | [NumberInputOutput.asm](NumberInputOutput.asm) |
 | **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](EvenOdd.asm) |
 | **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](Addition.asm) |
