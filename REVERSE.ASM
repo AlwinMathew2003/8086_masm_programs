@@ -1,3 +1,5 @@
+;program to reverse a string using stack
+
 .model small
 .STACK 100H
 .DATA
