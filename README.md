@@ -1,4 +1,12 @@
 # **8086-MASM PROGRAMMING**
+# Questions and Code Files Table
+
+| Question | Code File |
+|----------|-----------|
+| How to add two numbers? | [AdditionCode.c](src/AdditionCode.c) |
+| What is the main function in Python? | [MainFunction.py](src/MainFunction.py) |
+| How to implement a linked list? | [LinkedList.java](src/LinkedList.java) |
+| How to style a webpage with CSS? | [Style.css](web/Style.css) |
 ## **REGISTERS AND USAGE**
 
 1. **General-Purpose Registers:**
