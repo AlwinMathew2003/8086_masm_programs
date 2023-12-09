@@ -22,12 +22,12 @@
 
 | Program Name | Description | Code File |
 |--------------|-------------|-----------|
-| **Hello Program** | Program to print "hello." | [Hello.asm](Hello.asm) |
-| **String Input and Output** | Program to input and output a string character by character. | [StringInOut.asm](StringInOut.asm) |
-| **String Input and Output (Using DOS Functions)** | Program to input a string using 3FH and output using 09H. | [StringInputOutput.asm](StringInputOutput.asm) |
-| **Palindrome Check** | Program to check whether the given string is a palindrome. | [Palindrome.asm](Palindrome.asm) |
-| **String Length Calculation** | Program to find the length of a string. | [StringLength.asm](StringLength.asm) |
-| **String Reversal using Stack** | Program to reverse a string using a stack. | [StringReverse.asm](StringReverse.asm) |
+| **Hello Program** | Program to print "hello." | [Hello.asm](HELLO.ASM) |
+| **String Input and Output** | Program to input and output a string character by character. | [StringInOut.asm](STRIN.ASM) |
+| **String Input and Output (Using DOS Functions)** | Program to input a string using 3FH and output using 09H. | [StringInputOutput.asm](STRIN_AH.ASM) |
+| **Palindrome Check** | Program to check whether the given string is a palindrome. | [Palindrome.asm](PALINDRO.ASM) |
+| **String Length Calculation** | Program to find the length of a string. | [StringLength.asm](STRLEN.ASM) |
+| **String Reversal using Stack** | Program to reverse a string using a stack. | [StringReverse.asm](REVERSE.ASM) |
 | **Number Input and Output** | Program to input a number and print the inputted number. | [NumberInputOutput.asm](NumberInputOutput.asm) |
 | **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](EvenOdd.asm) |
 | **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](Addition.asm) |
