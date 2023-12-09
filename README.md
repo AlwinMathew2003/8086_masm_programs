@@ -1,15 +1,19 @@
 # **8086-MASM PROGRAMMING**
 
-# Table of Contents
-| Section | Link                                  |
-|---------|---------------------------------------|
-| 1       | [Section 1](#section-1)               |
-| 2       | [Section 2](#section-2)               |
-| 3       | [Section 3](#section-3)               |
-| 4 | [Questions and Code Files Table](#questions-and-code-files-table)  |
+# TABLE OF CONTENTS
+
+| Section                        | Link                                  |
+|---------------------------------|---------------------------------------|
+| QUESTIONS AND CODE FILES TABLE | [QUESTIONS AND CODE FILES TABLE](#questions-and-code-files-table)  |
+| REGISTERS AND USAGE             | [REGISTERS AND USAGE](#registers-and-usage)               |
+| BASIC INSTRUCTION               | [BASIC INSTRUCTION](#basic-instruction)               |
+| INT 21H DOS FUNCTION            | [INT 21H DOS FUNCTION](#int-21h-dos-function)               |
+| BASIC ASCII VALUES              | [BASIC ASCII VALUES](#basic-ascii-values)               |
+| BASIC CODE BLOCK                | [BASIC CODE BLOCK](#basic-code-block)               |
 
 
-# Questions and Code Files Table
+
+# QUESTIONS AND CODE FILES TABLE
 
 | Question | Code File |
 |----------|-----------|
