@@ -6,7 +6,7 @@
 | 1       | [Section 1](#section-1)               |
 | 2       | [Section 2](#section-2)               |
 | 3       | [Section 3](#section-3)               |
-| 4 | [Questions and Code Files](#heading)  |
+| 4 | [Questions and Code Files Table](#questions-and-code-files-table)  |
 
 
 # Questions and Code Files Table
