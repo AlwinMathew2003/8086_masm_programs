@@ -1,9 +1,5 @@
 # **8086-MASM PROGRAMMING**
-
-
-
-                        
-
+                    
 
 | **SECTION**                        | **LINKS**                            |
 |---------------------------------|---------------------------------------|
@@ -19,7 +15,7 @@
 
 | Question | Code File |
 |----------|-----------|
-| How to add two numbers? | [AdditionCode.c](src/AdditionCode.c) |
+| How to add two numbers? | [Palindrome.asm](PALINDRO.ASM) |
 | What is the main function in Python? | [MainFunction.py](src/MainFunction.py) |
 | How to implement a linked list? | [LinkedList.java](src/LinkedList.java) |
 | How to style a webpage with CSS? | [Style.css](web/Style.css) |
