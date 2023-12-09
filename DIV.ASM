@@ -1,7 +1,6 @@
 ;program to divide to numbers
 
 .model small
-
 prints macro p
 lea dx,p
 mov ah,09h
