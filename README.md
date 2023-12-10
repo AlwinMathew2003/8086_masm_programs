@@ -53,7 +53,7 @@
 | **Multiplication of Two Numbers** | Program to multiply two numbers. | [Multiplication.asm](MUL.ASM) |
 | **Multiplication without Using MUL** | Program to multiply two numbers without using MUL. | [MultiplicationWithoutMUL.asm](MUL1.ASM) |
 | **Division of Two Numbers** | Program to divide two numbers. | [Division.asm](DIV.ASM) |
-| **Division without Using DIV** | Program to divide two numbers without using DIV. | [DivisionWithoutDIV.asm](DivisionWithoutDIV.asm) |
+| **Division without Using DIV** | Program to divide two numbers without using DIV. | [DivisionWithoutDIV.asm](DIV1.ASM) |
 | **Factorization** | Program to find the factors of a number. | [Factors.asm](FACT.ASM) |
 | **Array Input and Output** | Program to input array elements and print the array elements. | [ArrayInputOutput.asm](ARRAY.ASM) |
 | **Array Sorting** | Program to sort array elements. | [ArraySort.asm](ArraySort.asm) |
