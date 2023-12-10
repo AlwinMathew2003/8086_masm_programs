@@ -51,7 +51,7 @@
 | **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](EVEN_ODD.asm) |
 | **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](ADD.ASM) |
 | **Multiplication of Two Numbers** | Program to multiply two numbers. | [Multiplication.asm](MUL.ASM) |
-| **Multiplication without Using MUL** | Program to multiply two numbers without using MUL. | [MultiplicationWithoutMUL.asm](MultiplicationWithoutMUL.asm) |
+| **Multiplication without Using MUL** | Program to multiply two numbers without using MUL. | [MultiplicationWithoutMUL.asm](MUL1.ASM) |
 | **Division of Two Numbers** | Program to divide two numbers. | [Division.asm](DIV.ASM) |
 | **Division without Using DIV** | Program to divide two numbers without using DIV. | [DivisionWithoutDIV.asm](DivisionWithoutDIV.asm) |
 | **Factorization** | Program to find the factors of a number. | [Factors.asm](FACT.ASM) |
