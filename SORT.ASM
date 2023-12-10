@@ -10,6 +10,7 @@ endm
 array db 3,5,2,4
 limit db 4
 msg1 db 10,13,'Sorted elements of array are:$'
+
 .code
 mov ax,@data
 mov ds,ax
