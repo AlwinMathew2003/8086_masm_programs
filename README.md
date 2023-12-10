@@ -19,7 +19,22 @@
 [![Download DOSBox](https://img.shields.io/badge/Download%20DOSBox-Install%20Now-brightgreen?style=for-the-badge)](https://sourceforge.net/projects/dosbox/files/latest/download)
 
 [![Download Masm-8086](https://img.shields.io/badge/Download%20Masm--8086-Install%20Now-brightgreen?style=for-the-badge)](https://drive.google.com/file/d/1DoQrdZ6WJOGZwa-EuDXU-DnCHBtf2tl8/view)
+**!!Install the masm-8086 in the C folder**
 
+### Mounting 8086
+
+> mount c c:\8086
+
+> c:
+
+### Steps to run the program
+
+> masm prgoram_name.asm
+
+> link program_name.obj
+
+> program_name
+ 
 ## <br>Sample 8086 masm assembly programs
 
 | Program Name | Description | Code File |
@@ -30,8 +45,8 @@
 | **Palindrome Check** | Program to check whether the given string is a palindrome. | [Palindrome.asm](PALINDRO.ASM) |
 | **String Length Calculation** | Program to find the length of a string. | [StringLength.asm](STRLEN.ASM) |
 | **String Reversal using Stack** | Program to reverse a string using a stack. | [StringReverse.asm](REVERSE.ASM) |
-| **Print number** |program to print a number in a variable. | [PrintNum.asm](NumberInputOutput.asm) |
-| **Number Input and Output** | Program to input a number and print the inputted number. | [NumberInputOutput.asm](NumberInputOutput.asm) |
+| **Print number** |program to print a number in a variable. | [PrintNum.asm](NUM.ASM) |
+| **Number Input and Output** | Program to input a number and print the inputted number. | [NumberInputOutput.asm](NUMIN.ASM) |
 | **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](EVEN_ODD.asm) |
 | **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](ADD.ASM) |
 | **Multiplication of Two Numbers** | Program to multiply two numbers. | [Multiplication.asm](MUL.ASM) |
@@ -39,10 +54,10 @@
 | **Division of Two Numbers** | Program to divide two numbers. | [Division.asm](DIV.ASM) |
 | **Division without Using DIV** | Program to divide two numbers without using DIV. | [DivisionWithoutDIV.asm](DivisionWithoutDIV.asm) |
 | **Factorization** | Program to find the factors of a number. | [Factors.asm](FACT.ASM) |
-| **Array Input and Output** | Program to input array elements and print the array elements. | [ArrayInputOutput.asm](ArrayInputOutput.asm) |
+| **Array Input and Output** | Program to input array elements and print the array elements. | [ArrayInputOutput.asm](ARRAY.ASM) |
 | **Array Sorting** | Program to sort array elements. | [ArraySort.asm](ArraySort.asm) |
 | **Finding the Largest Number in an Array** | Program to find the largest number in an array. | [LargestInArray.asm](LargestInArray.asm) |
-| **Sum of the First 10 Even Numbers** | Program to find the sum of the first 10 even numbers. | [SumOfEvenNumbers.asm](SumOfEvenNumbers.asm) |
+| **Sum of the First 10 Even Numbers** | Program to find the sum of the first 10 even numbers. | [SumOfEvenNumbers.asm](EVEN.ASM) |
 
 
 
