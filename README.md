@@ -57,7 +57,7 @@
 | **Factorization** | Program to find the factors of a number. | [Factors.asm](FACT.ASM) |
 | **Array Input and Output** | Program to input array elements and print the array elements. | [ArrayInputOutput.asm](ARRAY.ASM) |
 | **Array Sorting** | Program to sort array elements. | [ArraySort.asm](ArraySort.asm) |
-| **Finding the Largest Number in an Array** | Program to find the largest number in an array. | [LargestInArray.asm](LargestInArray.asm) |
+| **Finding the Largest Number in an Array** | Program to find the largest number in an array. | [LargestInArray.asm](LARGEST.ASM) |
 | **Sum of the First 10 Even Numbers** | Program to find the sum of the first 10 even numbers. | [SumOfEvenNumbers.asm](EVEN.ASM) |
 
 
