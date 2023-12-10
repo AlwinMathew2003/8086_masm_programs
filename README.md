@@ -125,7 +125,7 @@ MOV AX, 30
 
 MOV CX, 5
 
-DIV CX ; AX = AX / CX, DX = AX % CX
+DIV CX ; AL = AX / CX, AH = AX % CX
 
 ### **Logical Instructions:**
 
