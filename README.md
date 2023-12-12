@@ -62,6 +62,7 @@
 | **Number of a's in a string** | Program to find the number of a's in a string | [NumberOfA.asm](NUMA.ASM) |
 | **TrianglePattern** | Program to print a pattern | [TrianglePattern.asm](PATTERN.ASM) |
 | **FibonacciSeries** | Progam to find the fibonacci series| [FibonacciSeries.asm](FIBO.ASM) |
+| **Prime number check** | Program to check whether the give number is prime or not| [PrimeCheck.asm](PRIME.ASM) |
 
 
 
