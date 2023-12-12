@@ -60,7 +60,7 @@
 | **Finding the Largest Number in an Array** | Program to find the largest number in an array. | [LargestInArray.asm](LARGEST.ASM) |
 | **Sum of the First 10 Even Numbers** | Program to find the sum of the first 10 even numbers. | [SumOfEvenNumbers.asm](EVENSUM.ASM) |
 | **Number of a's in a string** | Program to find the number of a's in a string | [NumberOfA.asm](NUMA.ASM) |
-| **Pattern** | Program to print a pattern | [TrianglePattern.asm](PATTERN.ASM) |
+| **TrianglePattern** | Program to print a pattern | [TrianglePattern.asm](PATTERN.ASM) |
 
 
 
