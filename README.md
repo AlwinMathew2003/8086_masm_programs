@@ -131,6 +131,16 @@ MOV CX, 5
 
 DIV CX ; AL = AX / CX, AH = AX % CX
 
+#### AAA(ASCII Adjust After Addition):
+
+Since each 8 Bit register contains an hexadecimal number so on addition of 7+4 (any addition that result greater than 9) it will result in 12 in AL register and on printing the result it will not print correctly as per the result in order to do that we have to load 1 in AH register and 2 in AH register by dividing by 10. After addition of a number. (For addition resulting in 0 to 9 does not need this since it is a valid BCD)
+
+So in order to avoid this we can use AAA it automatically do this process after addition. 
+
+#### AAM(ASCII Adjust After Multiplication):
+
+Same operation as we mentioned in AAA. It adjust the product obtained in to AL and AH register if it is greater than 0.
+
 ### **Logical Instructions:**
 
 ####  AND (Bitwise AND):
