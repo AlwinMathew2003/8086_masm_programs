@@ -7,8 +7,8 @@ printn macro p
 endm
 
 .data
-a db 3
-b db 2
+a db 2
+b db 3
 msg1 db 10,13,'Result:$'
 
 .code
