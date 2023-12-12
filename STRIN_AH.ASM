@@ -1,4 +1,4 @@
-;program to input string using 3fh and outputing using 09h
+;program to input string using 0ah and outputing using 09h
 
 .model small
 .data
