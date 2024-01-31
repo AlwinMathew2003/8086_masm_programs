@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         #markdown-container {
             font-family: 'Arial', sans-serif;
@@ -21,22 +20,23 @@
     <script>
         const markdownContent = `
             # **8086-MASM PROGRAMMING**<br>
-            ## Table Of Contents
-            | SECTION | LINKS |
-            |---------|-------|
-            | Installation of 8086 | [Installation of 8086](#Installation) |
-            | Sample 8086 masm assembly programs | [Sample 8086 masm assembly programs](#sample-8086-masm-assembly-programs) |
-            | Registers and Usage | [Registers and Usage](#registers-and-usage) |
-            | Basic Instruction | [Basic Instruction](#basic-instruction) |
-            | INT 21H DOS Function | [INT 21H DOS Function](#int-21h-dos-function) |
-            | Basic ASCII Values | [Basic ASCII Values](#basic-ascii-values) |
-            | Basic Code Block | [Basic Code Block](#basic-code-block) |
+            ## **<br>Table Of Contents**
+            | **SECTION**                        | **LINKS**                            |
+            |---------------------------------|---------------------------------------|
+            |**Installation of 8086** | [Installation of 8086](#Installation)  |
+            |**Sample 8086 masm assembly programs** | [Sample 8086 masm assembly programs](#sample-8086-masm-assembly-programs)  |
+            |**Registers and Usage**             | [Registers and Usage](#registers-and-usage)               |
+            |**Basic Instruction**               | [Basic Instruction](#basic-instruction)               |
+            |**INT 21H DOS Function**            | [INT 21H DOS Function](#int-21h-dos-function)               |
+            |**Basic ASCII Values**              | [Basic ASCII Values](#basic-ascii-values)               |
+            |**Basic Code Block**                | [Basic Code Block](#basic-code-block)               |
 
-            ## Installation
+            ## <br>Installation
             [![Download DOSBox](https://img.shields.io/badge/Download%20DOSBox-Install%20Now-brightgreen?style=for-the-badge)](https://sourceforge.net/projects/dosbox/files/latest/download)
             [![Download Masm-8086](https://img.shields.io/badge/Download%20Masm--8086-Install%20Now-brightgreen?style=for-the-badge)](https://drive.google.com/file/d/1DoQrdZ6WJOGZwa-EuDXU-DnCHBtf2tl8/view)
-            Install the masm-8086 in the C folder
-
+            
+            **Install the masm-8086 in the C folder**
+            
             ### Mounting 8086
             > mount c c:\\8086
             > c:
@@ -46,32 +46,53 @@
             > link program_name.obj
             > program_name
 
-            ## Sample 8086 masm assembly programs
+            ## <br>Sample 8086 masm assembly programs
+
             | Program Name | Description | Code File |
             |--------------|-------------|-----------|
-            | Hello Program | Program to print "hello." | [Hello.asm](HELLO.ASM) |
-            | String Input and Output | Program to input and output a string character by character. | [StringInOut.asm](STRIN_AH.ASM) |
-            ... <!-- Add more programs -->
+            | **Hello Program** | Program to print "hello." | [Hello.asm](HELLO.ASM) |
+            // ... (your other content)
 
-            ## Registers and Usage
-            1. General-Purpose Registers:
-                - AX (Accumulator): Often used for arithmetic and logic operations.
-                - BX (Base): Used as a base register for memory addressing.
-                - CX (Counter): Primarily used as a loop counter in string and loop operations.
-                - DX (Data): Used in multiplication and division operations, as well as certain I/O operations.
+            ## **<br>Registers and Usage**
 
-            2. Index Registers:
-                - SI (Source Index): Used as a source index in string operations.
-                - DI (Destination Index): Used as a destination index in string operations.
+            // ... (your other content)
 
-            ... <!-- Add more content -->
+            ## **<br>Basic Instruction**
 
+            // ... (your other content)
+
+            ## <br>INT 21H DOS Function
+
+            // ... (your other content)
+
+            ## **<br>Basic ASCII Values**
+
+            // ... (your other content)
+
+            ## **<br>Basic Code Block**
+
+            // ... (your other content)
         `;
 
         const markdownContainer = document.getElementById('markdown-container');
 
-        // Render the Markdown content
-        markdownContainer.innerHTML = marked(markdownContent);
+        // Convert Markdown to HTML using GitHub API
+        fetch('https://api.github.com/markdown', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                text: markdownContent,
+                mode: 'gfm',
+            }),
+        })
+        .then(response => response.text())
+        .then(html => {
+            // Render the HTML content
+            markdownContainer.innerHTML = html;
+        })
+        .catch(error => console.error('Error fetching GitHub API:', error));
     </script>
 </body>
 </html>
