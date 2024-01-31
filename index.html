@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        #markdown-container {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <div id="markdown-container"></div>
@@ -11,6 +21,51 @@
     <script>
         const markdownContent = `
             # **8086-MASM PROGRAMMING**<br>
+            ## Table Of Contents
+            | SECTION | LINKS |
+            |---------|-------|
+            | Installation of 8086 | [Installation of 8086](#Installation) |
+            | Sample 8086 masm assembly programs | [Sample 8086 masm assembly programs](#sample-8086-masm-assembly-programs) |
+            | Registers and Usage | [Registers and Usage](#registers-and-usage) |
+            | Basic Instruction | [Basic Instruction](#basic-instruction) |
+            | INT 21H DOS Function | [INT 21H DOS Function](#int-21h-dos-function) |
+            | Basic ASCII Values | [Basic ASCII Values](#basic-ascii-values) |
+            | Basic Code Block | [Basic Code Block](#basic-code-block) |
+
+            ## Installation
+            [![Download DOSBox](https://img.shields.io/badge/Download%20DOSBox-Install%20Now-brightgreen?style=for-the-badge)](https://sourceforge.net/projects/dosbox/files/latest/download)
+            [![Download Masm-8086](https://img.shields.io/badge/Download%20Masm--8086-Install%20Now-brightgreen?style=for-the-badge)](https://drive.google.com/file/d/1DoQrdZ6WJOGZwa-EuDXU-DnCHBtf2tl8/view)
+            Install the masm-8086 in the C folder
+
+            ### Mounting 8086
+            > mount c c:\\8086
+            > c:
+
+            ### Steps to run the program
+            > masm prgoram_name.asm
+            > link program_name.obj
+            > program_name
+
+            ## Sample 8086 masm assembly programs
+            | Program Name | Description | Code File |
+            |--------------|-------------|-----------|
+            | Hello Program | Program to print "hello." | [Hello.asm](HELLO.ASM) |
+            | String Input and Output | Program to input and output a string character by character. | [StringInOut.asm](STRIN_AH.ASM) |
+            ... <!-- Add more programs -->
+
+            ## Registers and Usage
+            1. General-Purpose Registers:
+                - AX (Accumulator): Often used for arithmetic and logic operations.
+                - BX (Base): Used as a base register for memory addressing.
+                - CX (Counter): Primarily used as a loop counter in string and loop operations.
+                - DX (Data): Used in multiplication and division operations, as well as certain I/O operations.
+
+            2. Index Registers:
+                - SI (Source Index): Used as a source index in string operations.
+                - DI (Destination Index): Used as a destination index in string operations.
+
+            ... <!-- Add more content -->
+
         `;
 
         const markdownContainer = document.getElementById('markdown-container');
