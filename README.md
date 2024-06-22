@@ -41,28 +41,28 @@
 | Program Name | Description | Code File |
 |--------------|-------------|-----------|
 | **Hello Program** | Program to print "hello." | [Hello.asm](HELLO.ASM) |
-| **String Input and Output** | Program to input and output a string character by character. | [StringInOut.asm](STRIN_AH.ASM) |
-| **String Input and Output (Using DOS Functions)** | Program to input a string using 3FH and output using 09H. | [StringInputOutput.asm](STRIN.ASM) |
-| **Palindrome Check** | Program to check whether the given string is a palindrome. | [Palindrome.asm](PALINDRO.ASM) |
-| **String Length Calculation** | Program to find the length of a string. | [StringLength.asm](STRLEN.ASM) |
-| **String Reversal using Stack** | Program to reverse a string using a stack. | [StringReverse.asm](REVERSE.ASM) |
-| **Print number** |program to print a number in a variable. | [PrintNum.asm](NUM.ASM) |
+| **String Input and Output** | Program to input and output a string character by character. | [StringInOut.asm](https://github.com/AlwinMathew2003/8086_masm_programs/STRIN_AH.ASM) |
+| **String Input and Output (Using DOS Functions)** | Program to input a string using 3FH and output using 09H. | [StringInputOutput.asm](https://github.com/AlwinMathew2003/8086_masm_programs/STRIN.ASM) |
+| **Palindrome Check** | Program to check whether the given string is a palindrome. | [Palindrome.asm](https://github.com/AlwinMathew2003/8086_masm_programs/PALINDRO.ASM) |
+| **String Length Calculation** | Program to find the length of a string. | [StringLength.asm](https://github.com/AlwinMathew2003/8086_masm_programs/STRLEN.ASM) |
+| **String Reversal using Stack** | Program to reverse a string using a stack. | [StringReverse.asm](https://github.com/AlwinMathew2003/8086_masm_programs/REVERSE.ASM) |
+| **Print number** |program to print a number in a variable. | [PrintNum.asm](https://github.com/AlwinMathew2003/8086_masm_programs/NUM.ASM) |
 | **Number Input and Output** | Program to input a number and print the inputted number. | [NumberInputOutput.asm](NUMIN.ASM) |
-| **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](EVEN_ODD.ASM) |
-| **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](ADD.ASM) |
-| **Multiplication of Two Numbers** | Program to multiply two numbers. | [Multiplication.asm](MUL.ASM) |
-| **Multiplication without Using MUL** | Program to multiply two numbers without using MUL. | [MultiplicationWithoutMUL.asm](MUL1.ASM) |
-| **Division of Two Numbers** | Program to divide two numbers. | [Division.asm](DIV.ASM) |
-| **Division without Using DIV** | Program to divide two numbers without using DIV. | [DivisionWithoutDIV.asm](DIV1.ASM) |
-| **Factorization** | Program to find the factors of a number. | [Factors.asm](FACT.ASM) |
-| **Array Input and Output** | Program to input array elements and print the array elements. | [ArrayInputOutput.asm](ARRAY.ASM) |
-| **Array Sorting** | Program to sort array elements. | [ArraySort.asm](SORT.ASM) |
-| **Finding the Largest Number in an Array** | Program to find the largest number in an array. | [LargestInArray.asm](LARGEST.ASM) |
-| **Sum of the First 10 Even Numbers** | Program to find the sum of the first 10 even numbers. | [SumOfEvenNumbers.asm](EVENSUM.ASM) |
-| **Number of a's in a string** | Program to find the number of a's in a string | [NumberOfA.asm](NUMA.ASM) |
-| **TrianglePattern** | Program to print a pattern | [TrianglePattern.asm](PATTERN.ASM) |
-| **FibonacciSeries** | Progam to find the fibonacci series| [FibonacciSeries.asm](FIBO.ASM) |
-| **Prime number check** | Program to check whether the give number is prime or not| [PrimeCheck.asm](PRIME.ASM) |
+| **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](https://github.com/AlwinMathew2003/8086_masm_programs/EVEN_ODD.ASM) |
+| **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](https://github.com/AlwinMathew2003/8086_masm_programs/ADD.ASM) |
+| **Multiplication of Two Numbers** | Program to multiply two numbers. | [Multiplication.asm](https://github.com/AlwinMathew2003/8086_masm_programs/MUL.ASM) |
+| **Multiplication without Using MUL** | Program to multiply two numbers without using MUL. | [MultiplicationWithoutMUL.asm](https://github.com/AlwinMathew2003/8086_masm_programs/MUL1.ASM) |
+| **Division of Two Numbers** | Program to divide two numbers. | [Division.asm](https://github.com/AlwinMathew2003/8086_masm_programs/DIV.ASM) |
+| **Division without Using DIV** | Program to divide two numbers without using DIV. | [DivisionWithoutDIV.asm](https://github.com/AlwinMathew2003/8086_masm_programs/DIV1.ASM) |
+| **Factorization** | Program to find the factors of a number. | [Factors.asm](https://github.com/AlwinMathew2003/8086_masm_programs/FACT.ASM) |
+| **Array Input and Output** | Program to input array elements and print the array elements. | [ArrayInputOutput.asm](https://github.com/AlwinMathew2003/8086_masm_programs/ARRAY.ASM) |
+| **Array Sorting** | Program to sort array elements. | [ArraySort.asm](https://github.com/AlwinMathew2003/8086_masm_programs/SORT.ASM) |
+| **Finding the Largest Number in an Array** | Program to find the largest number in an array. | [LargestInArray.asm](https://github.com/AlwinMathew2003/8086_masm_programs/LARGEST.ASM) |
+| **Sum of the First 10 Even Numbers** | Program to find the sum of the first 10 even numbers. | [SumOfEvenNumbers.asm](https://github.com/AlwinMathew2003/8086_masm_programs/EVENSUM.ASM) |
+| **Number of a's in a string** | Program to find the number of a's in a string | [NumberOfA.asm](https://github.com/AlwinMathew2003/8086_masm_programs/NUMA.ASM) |
+| **TrianglePattern** | Program to print a pattern | [TrianglePattern.asm](https://github.com/AlwinMathew2003/8086_masm_programs/PATTERN.ASM) |
+| **FibonacciSeries** | Progam to find the fibonacci series| [FibonacciSeries.asm](https://github.com/AlwinMathew2003/8086_masm_programs/FIBO.ASM) |
+| **Prime number check** | Program to check whether the give number is prime or not| [PrimeCheck.asm](https://github.com/AlwinMathew2003/8086_masm_programs/PRIME.ASM) |
 
 
 
