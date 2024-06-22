@@ -1,98 +1,490 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        #markdown-container {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-    <div id="markdown-container"></div>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&ast;&ast;8086-MASM PROGRAMMING&ast;&ast;&lt;br&gt;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
 
-    <script>
-        const markdownContent = `
-            # **8086-MASM PROGRAMMING**<br>
-            ## **<br>Table Of Contents**
-            | **SECTION**                        | **LINKS**                            |
-            |---------------------------------|---------------------------------------|
-            |**Installation of 8086** | [Installation of 8086](#Installation)  |
-            |**Sample 8086 masm assembly programs** | [Sample 8086 masm assembly programs](#sample-8086-masm-assembly-programs)  |
-            |**Registers and Usage**             | [Registers and Usage](#registers-and-usage)               |
-            |**Basic Instruction**               | [Basic Instruction](#basic-instruction)               |
-            |**INT 21H DOS Function**            | [INT 21H DOS Function](#int-21h-dos-function)               |
-            |**Basic ASCII Values**              | [Basic ASCII Values](#basic-ascii-values)               |
-            |**Basic Code Block**                | [Basic Code Block](#basic-code-block)               |
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
 
-            ## <br>Installation
-            [![Download DOSBox](https://img.shields.io/badge/Download%20DOSBox-Install%20Now-brightgreen?style=for-the-badge)](https://sourceforge.net/projects/dosbox/files/latest/download)
-            [![Download Masm-8086](https://img.shields.io/badge/Download%20Masm--8086-Install%20Now-brightgreen?style=for-the-badge)](https://drive.google.com/file/d/1DoQrdZ6WJOGZwa-EuDXU-DnCHBtf2tl8/view)
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="8086-masm-programming"><strong>8086-MASM PROGRAMMING</strong><br></h1>
+<h2 id="table-of-contents"><strong><br>Table Of Contents</strong></h2>
+<table>
+<thead>
+<tr>
+<th><strong>SECTION</strong></th>
+<th><strong>LINKS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Installation of 8086</strong></td>
+<td><a href="#Installation">Installation of 8086</a></td>
+</tr>
+<tr>
+<td><strong>Sample 8086 masm assembly programs</strong></td>
+<td><a href="#sample-8086-masm-assembly-programs">Sample 8086 masm assembly programs</a></td>
+</tr>
+<tr>
+<td><strong>Registers and Usage</strong></td>
+<td><a href="#registers-and-usage">Registers and Usage</a></td>
+</tr>
+<tr>
+<td><strong>Basic Instruction</strong></td>
+<td><a href="#basic-instruction">Basic Instruction</a></td>
+</tr>
+<tr>
+<td><strong>INT 21H DOS Function</strong></td>
+<td><a href="#int-21h-dos-function">INT 21H DOS Function</a></td>
+</tr>
+<tr>
+<td><strong>Basic ASCII Values</strong></td>
+<td><a href="#basic-ascii-values">Basic ASCII Values</a></td>
+</tr>
+<tr>
+<td><strong>Basic Code Block</strong></td>
+<td><a href="#basic-code-block">Basic Code Block</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="installation"><br>Installation</h2>
+<p><a href="https://sourceforge.net/projects/dosbox/files/latest/download"><img src="https://img.shields.io/badge/Download%20DOSBox-Install%20Now-brightgreen?style=for-the-badge" alt="Download DOSBox"></a></p>
+<p><a href="https://drive.google.com/file/d/1DoQrdZ6WJOGZwa-EuDXU-DnCHBtf2tl8/view"><img src="https://img.shields.io/badge/Download%20Masm--8086-Install%20Now-brightgreen?style=for-the-badge" alt="Download Masm-8086"></a></p>
+<p><strong>Install the masm-8086 in the C folder</strong></p>
+<h3 id="mounting-8086">Mounting 8086</h3>
+<blockquote>
+<p>mount c c:\8086</p>
+</blockquote>
+<blockquote>
+<p>c:</p>
+</blockquote>
+<h3 id="steps-to-run-the-program">Steps to run the program</h3>
+<blockquote>
+<p>masm prgoram_name.asm</p>
+</blockquote>
+<blockquote>
+<p>link program_name.obj</p>
+</blockquote>
+<blockquote>
+<p>program_name</p>
+</blockquote>
+<h2 id="sample-8086-masm-assembly-programs"><br>Sample 8086 masm assembly programs</h2>
+<table>
+<thead>
+<tr>
+<th>Program Name</th>
+<th>Description</th>
+<th>Code File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hello Program</strong></td>
+<td>Program to print &quot;hello.&quot;</td>
+<td><a href="HELLO.ASM">Hello.asm</a></td>
+</tr>
+<tr>
+<td><strong>String Input and Output</strong></td>
+<td>Program to input and output a string character by character.</td>
+<td><a href="STRIN_AH.ASM">StringInOut.asm</a></td>
+</tr>
+<tr>
+<td><strong>String Input and Output (Using DOS Functions)</strong></td>
+<td>Program to input a string using 3FH and output using 09H.</td>
+<td><a href="STRIN.ASM">StringInputOutput.asm</a></td>
+</tr>
+<tr>
+<td><strong>Palindrome Check</strong></td>
+<td>Program to check whether the given string is a palindrome.</td>
+<td><a href="PALINDRO.ASM">Palindrome.asm</a></td>
+</tr>
+<tr>
+<td><strong>String Length Calculation</strong></td>
+<td>Program to find the length of a string.</td>
+<td><a href="STRLEN.ASM">StringLength.asm</a></td>
+</tr>
+<tr>
+<td><strong>String Reversal using Stack</strong></td>
+<td>Program to reverse a string using a stack.</td>
+<td><a href="REVERSE.ASM">StringReverse.asm</a></td>
+</tr>
+<tr>
+<td><strong>Print number</strong></td>
+<td>program to print a number in a variable.</td>
+<td><a href="NUM.ASM">PrintNum.asm</a></td>
+</tr>
+<tr>
+<td><strong>Number Input and Output</strong></td>
+<td>Program to input a number and print the inputted number.</td>
+<td><a href="NUMIN.ASM">NumberInputOutput.asm</a></td>
+</tr>
+<tr>
+<td><strong>Even or Odd Check</strong></td>
+<td>Program to find whether a number is even or odd.</td>
+<td><a href="EVEN_ODD.ASM">EvenOdd.asm</a></td>
+</tr>
+<tr>
+<td><strong>Addition of Two Numbers</strong></td>
+<td>Program to add two numbers.</td>
+<td><a href="ADD.ASM">Addition.asm</a></td>
+</tr>
+<tr>
+<td><strong>Multiplication of Two Numbers</strong></td>
+<td>Program to multiply two numbers.</td>
+<td><a href="MUL.ASM">Multiplication.asm</a></td>
+</tr>
+<tr>
+<td><strong>Multiplication without Using MUL</strong></td>
+<td>Program to multiply two numbers without using MUL.</td>
+<td><a href="MUL1.ASM">MultiplicationWithoutMUL.asm</a></td>
+</tr>
+<tr>
+<td><strong>Division of Two Numbers</strong></td>
+<td>Program to divide two numbers.</td>
+<td><a href="DIV.ASM">Division.asm</a></td>
+</tr>
+<tr>
+<td><strong>Division without Using DIV</strong></td>
+<td>Program to divide two numbers without using DIV.</td>
+<td><a href="DIV1.ASM">DivisionWithoutDIV.asm</a></td>
+</tr>
+<tr>
+<td><strong>Factorization</strong></td>
+<td>Program to find the factors of a number.</td>
+<td><a href="FACT.ASM">Factors.asm</a></td>
+</tr>
+<tr>
+<td><strong>Array Input and Output</strong></td>
+<td>Program to input array elements and print the array elements.</td>
+<td><a href="ARRAY.ASM">ArrayInputOutput.asm</a></td>
+</tr>
+<tr>
+<td><strong>Array Sorting</strong></td>
+<td>Program to sort array elements.</td>
+<td><a href="SORT.ASM">ArraySort.asm</a></td>
+</tr>
+<tr>
+<td><strong>Finding the Largest Number in an Array</strong></td>
+<td>Program to find the largest number in an array.</td>
+<td><a href="LARGEST.ASM">LargestInArray.asm</a></td>
+</tr>
+<tr>
+<td><strong>Sum of the First 10 Even Numbers</strong></td>
+<td>Program to find the sum of the first 10 even numbers.</td>
+<td><a href="EVENSUM.ASM">SumOfEvenNumbers.asm</a></td>
+</tr>
+<tr>
+<td><strong>Number of a's in a string</strong></td>
+<td>Program to find the number of a's in a string</td>
+<td><a href="NUMA.ASM">NumberOfA.asm</a></td>
+</tr>
+<tr>
+<td><strong>TrianglePattern</strong></td>
+<td>Program to print a pattern</td>
+<td><a href="PATTERN.ASM">TrianglePattern.asm</a></td>
+</tr>
+<tr>
+<td><strong>FibonacciSeries</strong></td>
+<td>Progam to find the fibonacci series</td>
+<td><a href="FIBO.ASM">FibonacciSeries.asm</a></td>
+</tr>
+<tr>
+<td><strong>Prime number check</strong></td>
+<td>Program to check whether the give number is prime or not</td>
+<td><a href="PRIME.ASM">PrimeCheck.asm</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="registers-and-usage"><strong><br>Registers and Usage</strong></h2>
+<ol>
+<li><strong>General-Purpose Registers:</strong>
+<ul>
+<li><strong>AX (Accumulator):</strong> Often used for arithmetic and logic operations. It is also used in some string manipulation instructions.</li>
+<li><strong>BX (Base):</strong> Used as a base register for memory addressing.</li>
+<li><strong>CX (Counter):</strong> Primarily used as a loop counter in string and loop operations.</li>
+<li><strong>DX (Data):</strong> Used in multiplication and division operations, as well as certain I/O operations.</li>
+</ul>
+</li>
+<li><strong>Index Registers:</strong>
+<ul>
+<li><strong>SI (Source Index):</strong> Used as a source index in string operations.</li>
+<li><strong>DI (Destination Index):</strong> Used as a destination index in string operations.</li>
+</ul>
+</li>
+<li><strong>Segment Registers:</strong>
+<ul>
+<li><strong>CS (Code Segment):</strong> Contains the starting address of the code segment.</li>
+<li><strong>DS (Data Segment):</strong> Contains the starting address of the data segment.</li>
+<li><strong>SS (Stack Segment):</strong> Points to the beginning of the stack segment.</li>
+<li><strong>ES (Extra Segment):</strong> An additional segment register often used for extra data segment addressing.</li>
+</ul>
+</li>
+<li><strong>Pointer Registers:</strong>
+<ul>
+<li><strong>SP (Stack Pointer):</strong> Points to the top of the stack.</li>
+<li><strong>BP (Base Pointer):</strong> Used as a base pointer for stack operations.</li>
+</ul>
+</li>
+<li><strong>Flag Register:</strong>
+<ul>
+<li><strong>FLAGS (Status Flags):</strong> Contains various status flags such as zero flag (ZF), carry flag (CF), sign flag (SF), etc., indicating the result of arithmetic and logical operations.</li>
+</ul>
+</li>
+</ol>
+<h2 id="basic-instruction"><strong><br>Basic Instruction</strong></h2>
+<h3 id="data-copy-instructions"><strong>Data Copy Instructions:</strong></h3>
+<h4 id="mov-move">MOV (Move):</h4>
+<p>MOV AX, BX ; Copy the value in BX to AX</p>
+<h4 id="lea-load-effective-address">LEA (Load Effective Address):</h4>
+<p>LEA SI, array ; Load the effective address of 'array' into SI</p>
+<h4 id="xchg-exchange">XCHG (Exchange):</h4>
+<p>XCHG AX, BX ; Exchange the values in AX and BX</p>
+<h3 id="arithmetic-instructions"><strong>Arithmetic Instructions:</strong></h3>
+<h4 id="add-addition">ADD (Addition):</h4>
+<p>ADD AX, BX ; Add the value in BX to AX</p>
+<h4 id="sub-subtraction">SUB (Subtraction):</h4>
+<p>SUB CX, DX ; Subtract the value in DX from CX</p>
+<h4 id="mul-unsigned-multiplication">MUL (Unsigned Multiplication):</h4>
+<p>it multiplies the value and store in AX register</p>
+<p>MOV AX, 5</p>
+<p>MOV BX, 10</p>
+<p>MUL BX ; AX = AX * B</p>
+<h4 id="div-unsigned-division">DIV (Unsigned Division):</h4>
+<p>It divides the value in AX register and store the remainder in AH and qoutiend in AL register</p>
+<p>MOV AX, 30</p>
+<p>MOV CX, 5</p>
+<p>DIV CX ; AL = AX / CX, AH = AX % CX</p>
+<h4 id="aaaascii-adjust-after-addition">AAA(ASCII Adjust After Addition):</h4>
+<p>Since each 8 Bit register contains an hexadecimal number so on addition of 7+4 (any addition that result greater than 9) it will result in 12 in AL register and on printing the result it will not print correctly as per the result in order to do that we have to load 1 in AH register and 2 in AH register by dividing by 10. After addition of a number. (For addition resulting in 0 to 9 does not need this since it is a valid BCD)</p>
+<p>So in order to avoid this we can use AAA it automatically do this process after addition.</p>
+<h4 id="aamascii-adjust-after-multiplication">AAM(ASCII Adjust After Multiplication):</h4>
+<p>Same operation as we mentioned in AAA. It adjust the product obtained in to AL and AH register if it is greater than 0.</p>
+<h3 id="logical-instructions"><strong>Logical Instructions:</strong></h3>
+<h4 id="and-bitwise-and">AND (Bitwise AND):</h4>
+<p>AND AL, 0Fh ; Perform a bitwise AND with AL and 0Fh</p>
+<h4 id="or-bitwise-or">OR (Bitwise OR):</h4>
+<p>OR BL, 80h ; Perform a bitwise OR with BL and 80h</p>
+<h4 id="xor-bitwise-xor">XOR (Bitwise XOR):</h4>
+<p>assemblyCopy code
+XOR AX, AX ; Perform a bitwise XOR on AX with itself (AX = 0)</p>
+<h4 id="not-bitwise-not">NOT (Bitwise NOT):</h4>
+<p>NOT DX ; Perform a bitwise NOT on DX</p>
+<h3 id="branch-instructions"><strong>Branch Instructions:</strong></h3>
+<h4 id="jmp-unconditional-jump">JMP (Unconditional Jump):</h4>
+<p>JMP label ; Jump to the specified label unconditionally</p>
+<h4 id="je-jump-if-equal">JE (Jump if Equal):</h4>
+<p>CMP AX, BX ; Compare AX and BX
+JE equal_label ; Jump to equal_label if they are equal</p>
+<h4 id="jne-jump-if-not-equal">JNE (Jump if Not Equal):</h4>
+<p>CMP CX, DX ; Compare CX and DX
+JNE not_equal_label ; Jump to not_equal_label if they are not equal</p>
+<h4 id="jg-jump-if-greater">JG (Jump if Greater):</h4>
+<p>CMP AX, BX ; Compare AX and BX
+JG greater_label ; Jump to greater_label if AX &gt; BX</p>
+<h2 id="int-21h-dos-function"><br>INT 21H DOS Function</h2>
+<p><strong>01H</strong></p>
+<p>MOV, AH 01H; request keyboard input INT 21H</p>
+<ul>
+<li>Returns character in AL. IF AL= nonzero value, operation echoes on the screen. If Al=
+zero means that user has pressed an extended function key such as F1 OR home.</li>
+</ul>
+<p><strong>02H</strong></p>
+<p>MOV AH, 02H; request display character
+MOV DL, CHAR; character to display
+INT 21H</p>
+<ul>
+<li>Display character in D2 at current cursor position. The tab, carriage return and line feed
+characters act normally and the operation automatically advances the cursor.</li>
+</ul>
+<p><strong>09H</strong></p>
+<p>MOV Ah, 09H; request display</p>
+<p>LEA DX, CUST_MSG; local address of prompt</p>
+<p>INNT 21H</p>
+<p>CUST_MSG DB “Hello world”, ‘$’</p>
+<p>Displays string in the data area, immediately followed by a dollar sign ($ or 24H), which
+uses to end the display.</p>
+<p><strong>OAH &amp; 3FH</strong></p>
+<p>It is used to read a string, you can use 3FH</p>
+<p>MOV AH, 0AH ; request keyboard input</p>
+<p>LEA DX, PARA_ LIST ; load address of parameter list</p>
+<p>INT 21H</p>
+<p>Parameter list for keyboard input area :
+PARA_LIST LABEL BYTE; start of parameter list</p>
+<p>MAX_LEN DB 20; max. no. of input character
+make these text without newline spaces</p>
+<h2 id="basic-ascii-values"><strong><br>Basic ASCII Values</strong></h2>
+<p>Space = 32(decimal)</p>
+<p>Newline = 10(decimal)</p>
+<p>Comma = 44(decimal)</p>
+<p>Enter(carriage return) = 13(decimal) or 0D(hexadecimal)</p>
+<p>Convert to ascii while printing and convert it to character to do any operation</p>
+<p>To ASCII = add it with 30H or 48(decimal)</p>
+<p>To decimal or character = sub it with 30H</p>
+<h2 id="basic-code-block"><strong><br>Basic Code Block</strong></h2>
+<p><strong>Declare a variable to store value</strong></p>
+<p>VAR1 DB 1 DUP(?) (It declares a variable with 1 byte)</p>
+<p><strong>Declare an array</strong></p>
+<p>ARRAY DB 5 DUP(?) (It declares an array with limit 5)</p>
+<p><strong>Initializing variable with a value</strong></p>
+<p>VAR1 DB 5  ( It stores a value 5 in 1 byte)</p>
+<p>it can be passed to a register using MOV AL,[VAR1] or MOV AL,VAR1</p>
+<p><strong>Initializing array with values</strong></p>
+<p>ARRAY DB 5,3,2,6</p>
+<p><strong>Initializing a variable with a string</strong></p>
+<p>STRING1 DB “HELLO$”  (”$” it represents the end of the string)</p>
+<p><strong>Initializing data segment</strong></p>
+<p>MOV AX,@DATA</p>
+<p>MOV DS,AX</p>
+<p><strong>Input a string and store it in variable ‘STRING1’</strong></p>
+<p>MOV AH,3FH</p>
+<p>LEA DX,STRING1</p>
+<p>INT 21H</p>
+<p>I<strong>nput a character or integer</strong></p>
+<p>MOV AH,01H</p>
+<p>INT 21H  (In this the data will be stored in the AL register)</p>
+<p>(This instruction can be given in a loop to input elements to an array)</p>
+<p><strong>Printing a string as such</strong></p>
+<p>MOV AH,09H</p>
+<p>MOV DX,OFFSET STRING1</p>
+<p>INT 21H</p>
+<p>(For outputting string one by one we can give it in a loop by printing single character by 02h DOS function)</p>
+<p><strong>Ending a program</strong></p>
+<p>MOV AH,4CH</p>
+<p>INT 21H</p>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
             
-            **Install the masm-8086 in the C folder**
-            
-            ### Mounting 8086
-            > mount c c:\\8086
-            > c:
-
-            ### Steps to run the program
-            > masm prgoram_name.asm
-            > link program_name.obj
-            > program_name
-
-            ## <br>Sample 8086 masm assembly programs
-
-            | Program Name | Description | Code File |
-            |--------------|-------------|-----------|
-            | **Hello Program** | Program to print "hello." | [Hello.asm](HELLO.ASM) |
-            // ... (your other content)
-
-            ## **<br>Registers and Usage**
-
-            // ... (your other content)
-
-            ## **<br>Basic Instruction**
-
-            // ... (your other content)
-
-            ## <br>INT 21H DOS Function
-
-            // ... (your other content)
-
-            ## **<br>Basic ASCII Values**
-
-            // ... (your other content)
-
-            ## **<br>Basic Code Block**
-
-            // ... (your other content)
-        `;
-
-        const markdownContainer = document.getElementById('markdown-container');
-
-        // Convert Markdown to HTML using GitHub API
-        fetch('https://api.github.com/markdown', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                text: markdownContent,
-                mode: 'gfm',
-            }),
-        })
-        .then(response => response.text())
-        .then(html => {
-            // Render the HTML content
-            markdownContainer.innerHTML = html;
-        })
-        .catch(error => console.error('Error fetching GitHub API:', error));
-    </script>
-</body>
-</html>
+        </body>
+        </html>
