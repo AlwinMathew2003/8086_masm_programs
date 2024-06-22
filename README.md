@@ -6,7 +6,7 @@
 ### [Department of Computer Science & Engineering](https://jecc.ac.in/departments/computer_science_engineering)
 #### 2021 - 2025 (A) Batch
 
-[![](https://img.shields.io/badge/Programs%20%26%20Viva%20by-%20Alwin%20Mathew%2C%20Adithya%20E-orange)](mailto:adithya.cse21@jecc.ac.in,alwinmathew.cse21@jecc.ac.in)
+[![](https://img.shields.io/badge/Programs%20%20by-%20Alwin%20Mathew%2C%20Adithya%20E-orange)](mailto:adithya.cse21@jecc.ac.in,alwinmathew.cse21@jecc.ac.in)
 
 ---
 ## **<br>Table Of Contents**
@@ -23,9 +23,9 @@
 
 ## <br>Installation
 
-[![](https://img.shields.io/badge/GCC%20%26%20DOSBox-Install%20on%20Windows%20-yellow)](https://sourceforge.net/projects/dosbox/files/latest/download)
+[![](https://img.shields.io/badge/DOSBox-Install%20on%20Windows%20-yellow)](https://sourceforge.net/projects/dosbox/files/latest/download)
 
-[![](https://img.shields.io/badge/CISCO%20%20PACKET%20%20Masm--8086-Install%20on%20Windows%20-yellow)](https://drive.google.com/file/d/1DoQrdZ6WJOGZwa-EuDXU-DnCHBtf2tl8/view)
+[![](https://img.shields.io/badge/Masm--8086-Install%20on%20Windows%20-yellow)](https://drive.google.com/file/d/1DoQrdZ6WJOGZwa-EuDXU-DnCHBtf2tl8/view)
 
 
 **Install the masm-8086 in the C folder**
