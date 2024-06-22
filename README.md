@@ -1,7 +1,14 @@
 
-# **8086-MASM PROGRAMMING**<br>
+# **CSL331 System Software And Microprocessors Lab**<br>
+## 8086-MASM PROGRAMMING
+### **KTU 2019 SCHEME**
+## [Jyothi Engineering College, Cheruthuruthy, Thrissur, Kerala](https://jecc.ac.in/)
+### [Department of Computer Science & Engineering](https://jecc.ac.in/departments/computer_science_engineering)
+#### 2021 - 2025 (A) Batch
 
+[![](https://img.shields.io/badge/Programs%20%26%20Viva%20by-%20Alwin%20Mathew%2C%20Adithya%20E-orange)](mailto:adithya.cse21@jecc.ac.in,alwinmathew.cse21@jecc.ac.in)
 
+---
 ## **<br>Table Of Contents**
 | **SECTION**                        | **LINKS**                            |
 |---------------------------------|---------------------------------------|
@@ -16,9 +23,10 @@
 
 ## <br>Installation
 
-[![Download DOSBox](https://img.shields.io/badge/Download%20DOSBox-Install%20Now-brightgreen?style=for-the-badge)](https://sourceforge.net/projects/dosbox/files/latest/download)
+[![](https://img.shields.io/badge/GCC%20%26%20DOSBox-Install%20on%20Windows%20-yellow)](https://sourceforge.net/projects/dosbox/files/latest/download)
 
-[![Download Masm-8086](https://img.shields.io/badge/Download%20Masm--8086-Install%20Now-brightgreen?style=for-the-badge)](https://drive.google.com/file/d/1DoQrdZ6WJOGZwa-EuDXU-DnCHBtf2tl8/view)
+[![](https://img.shields.io/badge/CISCO%20%20PACKET%20%20Masm--8086-Install%20on%20Windows%20-yellow)](https://drive.google.com/file/d/1DoQrdZ6WJOGZwa-EuDXU-DnCHBtf2tl8/view)
+
 
 **Install the masm-8086 in the C folder**
 
@@ -40,29 +48,29 @@
 
 | Program Name | Description | Code File |
 |--------------|-------------|-----------|
-| **Hello Program** | Program to print "hello." | [Hello.asm](HELLO.ASM) |
-| **String Input and Output** | Program to input and output a string character by character. | [StringInOut.asm](https://github.com/AlwinMathew2003/8086_masm_programs/STRIN_AH.ASM) |
-| **String Input and Output (Using DOS Functions)** | Program to input a string using 3FH and output using 09H. | [StringInputOutput.asm](https://github.com/AlwinMathew2003/8086_masm_programs/STRIN.ASM) |
-| **Palindrome Check** | Program to check whether the given string is a palindrome. | [Palindrome.asm](https://github.com/AlwinMathew2003/8086_masm_programs/PALINDRO.ASM) |
-| **String Length Calculation** | Program to find the length of a string. | [StringLength.asm](https://github.com/AlwinMathew2003/8086_masm_programs/STRLEN.ASM) |
-| **String Reversal using Stack** | Program to reverse a string using a stack. | [StringReverse.asm](https://github.com/AlwinMathew2003/8086_masm_programs/REVERSE.ASM) |
-| **Print number** |program to print a number in a variable. | [PrintNum.asm](https://github.com/AlwinMathew2003/8086_masm_programs/NUM.ASM) |
-| **Number Input and Output** | Program to input a number and print the inputted number. | [NumberInputOutput.asm](NUMIN.ASM) |
-| **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](https://github.com/AlwinMathew2003/8086_masm_programs/EVEN_ODD.ASM) |
-| **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](https://github.com/AlwinMathew2003/8086_masm_programs/ADD.ASM) |
-| **Multiplication of Two Numbers** | Program to multiply two numbers. | [Multiplication.asm](https://github.com/AlwinMathew2003/8086_masm_programs/MUL.ASM) |
-| **Multiplication without Using MUL** | Program to multiply two numbers without using MUL. | [MultiplicationWithoutMUL.asm](https://github.com/AlwinMathew2003/8086_masm_programs/MUL1.ASM) |
-| **Division of Two Numbers** | Program to divide two numbers. | [Division.asm](https://github.com/AlwinMathew2003/8086_masm_programs/DIV.ASM) |
-| **Division without Using DIV** | Program to divide two numbers without using DIV. | [DivisionWithoutDIV.asm](https://github.com/AlwinMathew2003/8086_masm_programs/DIV1.ASM) |
-| **Factorization** | Program to find the factors of a number. | [Factors.asm](https://github.com/AlwinMathew2003/8086_masm_programs/FACT.ASM) |
-| **Array Input and Output** | Program to input array elements and print the array elements. | [ArrayInputOutput.asm](https://github.com/AlwinMathew2003/8086_masm_programs/ARRAY.ASM) |
-| **Array Sorting** | Program to sort array elements. | [ArraySort.asm](https://github.com/AlwinMathew2003/8086_masm_programs/SORT.ASM) |
-| **Finding the Largest Number in an Array** | Program to find the largest number in an array. | [LargestInArray.asm](https://github.com/AlwinMathew2003/8086_masm_programs/LARGEST.ASM) |
-| **Sum of the First 10 Even Numbers** | Program to find the sum of the first 10 even numbers. | [SumOfEvenNumbers.asm](https://github.com/AlwinMathew2003/8086_masm_programs/EVENSUM.ASM) |
-| **Number of a's in a string** | Program to find the number of a's in a string | [NumberOfA.asm](https://github.com/AlwinMathew2003/8086_masm_programs/NUMA.ASM) |
-| **TrianglePattern** | Program to print a pattern | [TrianglePattern.asm](https://github.com/AlwinMathew2003/8086_masm_programs/PATTERN.ASM) |
-| **FibonacciSeries** | Progam to find the fibonacci series| [FibonacciSeries.asm](https://github.com/AlwinMathew2003/8086_masm_programs/FIBO.ASM) |
-| **Prime number check** | Program to check whether the give number is prime or not| [PrimeCheck.asm](https://github.com/AlwinMathew2003/8086_masm_programs/PRIME.ASM) |
+| **Hello Program** | Program to print "hello." | [Hello.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/HELLO.ASM) |
+| **String Input and Output** | Program to input and output a string character by character. | [StringInOut.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/STRIN_AH.ASM) |
+| **String Input and Output (Using DOS Functions)** | Program to input a string using 3FH and output using 09H. | [StringInputOutput.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/STRIN.ASM) |
+| **Palindrome Check** | Program to check whether the given string is a palindrome. | [Palindrome.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/PALINDRO.ASM) |
+| **String Length Calculation** | Program to find the length of a string. | [StringLength.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/STRLEN.ASM) |
+| **String Reversal using Stack** | Program to reverse a string using a stack. | [StringReverse.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/REVERSE.ASM) |
+| **Print number** |program to print a number in a variable. | [PrintNum.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/NUM.ASM) |
+| **Number Input and Output** | Program to input a number and print the inputted number. | [NumberInputOutput.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/NUMIN.ASM) |
+| **Even or Odd Check** | Program to find whether a number is even or odd. | [EvenOdd.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/EVEN_ODD.ASM) |
+| **Addition of Two Numbers** | Program to add two numbers. | [Addition.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/ADD.ASM) |
+| **Multiplication of Two Numbers** | Program to multiply two numbers. | [Multiplication.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/MUL.ASM) |
+| **Multiplication without Using MUL** | Program to multiply two numbers without using MUL. | [MultiplicationWithoutMUL.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/MUL1.ASM) |
+| **Division of Two Numbers** | Program to divide two numbers. | [Division.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/DIV.ASM) |
+| **Division without Using DIV** | Program to divide two numbers without using DIV. | [DivisionWithoutDIV.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/DIV1.ASM) |
+| **Factorization** | Program to find the factors of a number. | [Factors.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/FACT.ASM) |
+| **Array Input and Output** | Program to input array elements and print the array elements. | [ArrayInputOutput.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/ARRAY.ASM) |
+| **Array Sorting** | Program to sort array elements. | [ArraySort.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/SORT.ASM) |
+| **Finding the Largest Number in an Array** | Program to find the largest number in an array. | [LargestInArray.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/LARGEST.ASM) |
+| **Sum of the First 10 Even Numbers** | Program to find the sum of the first 10 even numbers. | [SumOfEvenNumbers.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/EVENSUM.ASM) |
+| **Number of a's in a string** | Program to find the number of a's in a string | [NumberOfA.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/NUMA.ASM) |
+| **TrianglePattern** | Program to print a pattern | [TrianglePattern.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/PATTERN.ASM) |
+| **FibonacciSeries** | Progam to find the fibonacci series| [FibonacciSeries.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/FIBO.ASM) |
+| **Prime number check** | Program to check whether the give number is prime or not| [PrimeCheck.asm](https://github.com/AlwinMathew2003/8086_masm_programs/blob/main/PRIME.ASM) |
 
 
 
